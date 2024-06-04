@@ -121,8 +121,8 @@ public Customer() {
 	private final String customerId;
     private final String name;
     private final String email;
-    private final Car[] rentedCars; // Array for rented cars
-    private int rentedCarCount; // Tracks the number of rented cars
+    private final Car[] rentedCars;
+    private int rentedCarCount; 
 	private String phoneNumber;
 	
 
@@ -241,7 +241,7 @@ public Customer() {
     public void addPhoneNumber(String phoneNumber) {
         
         if (phoneNumber == null || phoneNumber.isEmpty()) {
-            return;  // No need to update if phone number is null or empty
+            return;  
         } 
       //  addPhoneNumber(phoneNumber);  
         validatePhoneNumber(phoneNumber);
