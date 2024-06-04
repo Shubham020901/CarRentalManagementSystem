@@ -175,7 +175,7 @@ public Customer() {
 	}
 
 
-	// Defensive copy to prevent modification of the internal array
+	
     public Car[] getRentedCars() {
         return Arrays.copyOf(rentedCars, rentedCarCount);
     }
@@ -217,37 +217,37 @@ public Customer() {
     }
 /*    
     public void addPhoneNumber(String phoneNumber) {
+    // Step 1: Check for null or empty phone number
         if (phoneNumber == null || phoneNumber.isEmpty()) {
             return; // No need to update if phone number is null or empty
         }
-
+	 // Step 2: Validate phone number format
         validatePhoneNumber(phoneNumber); // Ensure valid format
 
         // If the customer already has a phone number, consider replacing or appending based on your logic
-        if (this.phoneNumber != null) {
+        // Step 3: Handle existing phone number (replace)
+	if (this.phoneNumber != null) {
             // Choose an appropriate strategy for handling existing phone number (e.g., replace, append with separator)
             // You can implement your desired behavior here
+
+     // Option 1: Replace existing phone number
             System.out.println("Customer already has a phone number: " + this.phoneNumber);
         } else {
+	// Step 4: Store new phone number (if no existing number)
             this.phoneNumber = phoneNumber; // Store the new phone number
         }
     }
 */
     public void addPhoneNumber(String phoneNumber) {
-        // Step 1: Check for null or empty phone number
+        
         if (phoneNumber == null || phoneNumber.isEmpty()) {
             return;  // No need to update if phone number is null or empty
-        }
-
-        // Step 2: Validate phone number format
-      //  addPhoneNumber(phoneNumber);  // Ensure valid format (already defined in the class)
+        } 
+      //  addPhoneNumber(phoneNumber);  
         validatePhoneNumber(phoneNumber);
-        // Step 3: Handle existing phone number (replace)
         if (this.phoneNumber != null) {
-            // Option 1: Replace existing phone number
             this.phoneNumber = phoneNumber;  // Replace existing phone number
         } else {
-            // Step 4: Store new phone number (if no existing number)
             this.phoneNumber = phoneNumber;  // Store the new phone number
         }
     }
