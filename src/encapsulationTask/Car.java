@@ -104,7 +104,7 @@ public void validateYear(int year) {
 	        this.model = model;
 	        this.brand = brand;
 	        this.year = year;
-	        this.available = true; // Initially available
+	        this.available = true; 
 	        this.color= color;
 	    }
 
