@@ -63,7 +63,7 @@ public class CarRentalManagementSystem {
 	        } catch (IllegalArgumentException e) {
 	            System.err.println("Error: " + e.getMessage()); // Rental date in the future
 	        }
-	         catch (Exception e) {// Handle other potential exceptions
+	         catch (Exception e) {
 	            System.err.println("UnexpectedError: " + e.getMessage()); // Rental date in the future
 	        }
 
